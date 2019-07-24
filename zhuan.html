@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>重庆希师科技有限公司</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="icss/bootstrap.css" />
+    <link rel="stylesheet" media="all" href="icss/animate.css" />
+    <link rel="stylesheet" media="all" href="icss/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="icss/furniture-icons.css" />
+    <link rel="stylesheet" media="all" href="icss/linear-icons.css" />
+    <link rel="stylesheet" media="all" href="icss/magnific-popup.css" />
+    <link rel="stylesheet" media="all" href="icss/owl.carousel.css" />
+    <link rel="stylesheet" media="all" href="icss/ion-range-slider.css" />
+    <link rel="stylesheet" media="all" href="icss/theme.css" />
+
+    <style>
+        body{
+            background-color: #eeeeee;
+        }
+        /*顶部 小导航 有时间*/
+        .backindex{
+            font-weight: 700;
+        }
+        #header_1{
+            background-color: #f5f5f5;
+        }
+        .breadcrumb{
+            margin-bottom: 0px;
+        }
+        .row{
+            margin: 0;
+        }
+
+        /*导航条*/
+        .navbar-brand{
+            color: black;
+            font-size: 24px;
+            padding-left: 100px;
+            font-weight: 700;
+        }
+        .title_word{
+            color: black;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .nav{
+            margin-left: 140px;
+        }
+
+        /*轮播图*/
+
+        /*我们的课程*/
+        .course{
+            height: 500px;
+        }
+
+    </style>
+
+    <script src="bootstrap-3.3.7-dist/js/html5shiv.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/respond.min.js"></script>
+    <script type="text/javascript">
+        function showTime(){
+            nowtime=new Date();
+            year=nowtime.getFullYear();
+            month=nowtime.getMonth()+1;
+            date=nowtime.getDate();
+            document.getElementById("mytime").innerText=year+"年"+month+"月"+date+" "+nowtime.toLocaleTimeString();
+        }
+        setInterval("showTime()",1000);
+
+    </script>
+</head>
+<body>
+    <!--导航栏吧  最顶部 有时间和小选项-->
+    <div class="row" id="header_1">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <ol class="breadcrumb">
+                <li id="mytime">当前时间</li>
+            </ol>
+        </div>
+        <div class="col-md-4">
+            <ol class="breadcrumb">
+                <li><a href="index.html" class="backindex">返回首页</a></li>
+                <li><a href="#">建议</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <!--真正的导航栏-->
+    <div class="row">
+        <nav class="navbar " style="background-color: #1c3f79;margin: 0">
+            <div class="container-fluid">
+                <div class="navbar-header" >
+                    <a class="navbar-brand" href="#" id="title">希师专升本</a>
+                    <button class="navbar-toggle" type="button" data-target="#col" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="col">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#" class="title_word">公司介绍</a></li>
+                        <li><a href="#" class="title_word">更多资讯</a></li>
+                        <li><a href="#"class="title_word">我们的服务</a></li>
+                        <li><a href="#" class="title_word">我们的理念</a></li>
+                        <li><a href="#"class="title_word">联系方式</a></li>
+                        <!--这里可以加一点 弹框-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--轮播图-->
+    <div class="row">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <img src="images/zhuan_share1.jpg" style="width:100%;height: 508px">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/zhuan_share2.jpg" style="width:100%;height: 508px">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="images/zhuan_share1.jpg" style="width:100%;height: 508px">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!--各种班级分类 分类-->
+    <div class="row">
+        <!-- ========================  Products widget ======================== -->
+        <section class="products" style="padding: 80px">
+
+            <div class="container">
+                <header>
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-8 text-center">
+                            <h2 class="title">我们的课程</h2>
+                            <div class="text">
+                                <p>我们共同成长</p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="row">
+
+                    <div class="col-md-3 col-xs-6">
+                        <article class="course">
+                            <div class="btn btn-add">
+                                <i class="icon icon-cart"></i>
+                            </div>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#" class="mfp-open">
+                                        <img src="images/product-1.jpg"  style="margin-top: 300px" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="#">精品全程课</a></h2>
+                                    <a>3200元/3年 （一次性收费，再无任何学杂费用）</a>
+                                    <p>
+                                        <a style="font-weight: 700">授课时间：</a>周六周日（基础班），赠送一个价值152课时的暑期集训班+12课时的模考评奖班。
+                                    </p>
+                                    <p>
+                                        <a style="font-weight: 700">授课时段：</a>从报名开始一直到考试前一周（从大一反复学习到大三）。
+                                    </p>
+
+                                    <span class="description clearfix">用心为你服务</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <article class="course">
+                            <div class="btn btn-add">
+                                <i class="icon icon-cart"></i>
+                            </div>
+                            <div class="figure-grid">
+                                <span class="label label-warning">建议</span>
+                                <div class="image">
+                                    <a href="#" class="mfp-open">
+                                        <img src="images/product-2.jpg" style="margin-top: 300px" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="#">VIP协议班</a></h2>
+                                    <a>6800元/3年 （一次性收费，再无任何学杂费用）</a>
+                                    <p>
+                                        <a style="font-weight: 700">授课时间：</a>
+                                        周六周日（基础+强化+集训+密训+冲刺），赠送两个共价值304课时的暑期集训班+一个216课时的寒假密训班+12课时的模考评奖班。
+                                    </p>
+                                    <p>
+                                        <a style="font-weight: 700">授课时段：</a>从报名开始一直到考试前一周（从大一反复学习到大三）。
+                                    </p>
+                                    <span class="description clearfix">用心服务</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <article class="course">
+                            <div class="btn btn-add">
+                                <i class="icon icon-cart"></i>
+                            </div>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#" class="mfp-open">
+                                        <img src="images/product-3.jpg" style="margin-top: 300px" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="#">上线协议班</a></h2>
+                                    <a>12800元/3年 （一次性收费，再无任何学杂费用，没上线按协议退费）</a>
+                                    <p>
+                                        <a style="font-weight: 700">授课时间：</a>
+                                        平时小班精品补课+周六周日（基础+强化+集训+密训+冲刺+模拟+押题）无限次循环上课！
+                                    </p>
+                                    <p>
+                                        <a style="font-weight: 700">授课时段：</a>从报名开始一直到考试前一周（从大一反复学习到大三）。
+                                    </p>
+                                    <span class="description clearfix">用心服务</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <article class="course">
+                            <div class="btn btn-add">
+                                <i class="icon icon-cart"></i>
+                            </div>
+                            <div class="figure-grid">
+                                <div class="image">
+                                    <a href="#" class="mfp-open">
+                                        <img src="images/product-4.jpg" style="margin-top: 300px" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title h4"><a href="#">定制班</a></h2>
+                                    <a>29800元/3年 （一次性收费，再无任何学杂费用，未录取学费全退）</a>
+                                    <p>
+                                        <a style="font-weight: 700">授课时间：</a>
+                                        平时小班精品补课+周六周日（基础+强化+集训+密训+冲刺+模拟+押题）无限次循环上课！
+                                    </p>
+                                    <p>
+                                        <a style="font-weight: 700">授课时段：</a>从报名开始一直到考试前一周（从大一反复学习到大三）。
+                                    </p>
+                                    <span class="description clearfix">用心服务</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="wrapper-more">
+                    <a href="#" class="btn btn-main">查看更多</a>
+                </div>
+
+            </div> <!--/container-->
+        </section>
+    </div>
+
+    <!--通知资讯-->
+    <div class="row">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/anna.png" style="width:120px;margin-left: 110px">
+                </a>
+            </div>
+            <div class="media-body" >
+                <h4 class="media-heading" style="margin-top: 24px">通知</h4>
+                聚天下英才 办学为民 为民办学
+                享时代政策 桃李天下 天下桃李
+                教育产业报国，推动大学生持续成长！
+                <button type="button" class="btn btn-primary">更多</button>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/anna.png" style="width:120px;margin-left: 110px">
+                </a>
+            </div>
+            <div class="media-body" >
+                <h4 class="media-heading" style="margin-top: 24px">通知</h4>
+                聚天下英才 办学为民 为民办学
+                享时代政策 桃李天下 天下桃李
+                教育产业报国，推动大学生持续成长！
+                <button type="button" class="btn btn-primary">更多</button>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/anna.png" style="width:120px;margin-left: 110px">
+                </a>
+            </div>
+            <div class="media-body" >
+                <h4 class="media-heading" style="margin-top: 24px">通知</h4>
+                聚天下英才 办学为民 为民办学
+                享时代政策 桃李天下 天下桃李
+                教育产业报国，推动大学生持续成长！
+                <button type="button" class="btn btn-primary">更多</button>
+            </div>
+        </div>
+    </div>
+
+    <!--底部信息  巨幕-->
+    <div class="row">
+        <div class="jumbotron" style="margin:0 80px">
+            <h1 style="text-align: center">我们为什么要专升本</h1>
+
+            <div class="alert alert-success" role="alert">一、学历的提升
+                显而易见，专升本可以使你从专科学历提升到本科学历，而学历的提升，
+                是很多同学选择进行升本的直接原因。专升本可以使你获得全日制本科毕业证书和学位证书，得到学历的提升。</div>
+            <div class="alert alert-info" role="alert"> 二、知识的获取
+                在全国范围中，专科院校相比与本科院校来说，无论是师资力量还是教学水平都有一定的差距。
+                本科院校的各个师资和教学相比与专科院校普遍偏高。学校中的学习氛围也比较浓厚。
+                专升本成功后，一般要在本科院校进行2年的学习，在这里，你可以获得更多的知识，以及更深的探究。</div>
+            <div class="alert alert-warning" role="alert">  三、证书的考取
+                现在越来越多的人看中证书的考取，但是好多证书对报名条件有一定的要求，很多限制只能本科学历进行报考。
+                像教师资格考试中专科学生是不能考取高级中学的教师资格证，很多其他含金量较高的证书考试也是如此，
+                所以专升本成功后你可以考取自己想要的证书。
+            </div>
+            <div class="alert alert-danger" role="alert"> 四、工作的获得
+                随着社会的发展，对教育的注重也越来越多，每年毕业的学生人数也越来越多，招聘单位对学历的要求同时也越来越高，
+                现在不仅仅是国企，就连很多民营企业也开始要求本科学历。在找工作的时候，
+                本科学历比专科学历有明显的优势，所以，专升本成功后，可以获得更好的就业平台，更易找寻工作。
+            </div>
+            <div class="alert alert-success" role="alert">
+                五、个人的发展
+                随着国家相关单位的福利待遇越来越高，越来越多的同学毕业后倾向于报考国家单位，进入国家性质的企业和单位进行工作，
+                而像银行和公务员的很多职位要求的学历为全日制本科学历，所以不进行升本，你连报考的资格都没有。
+                </div>
+
+           <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+        </div>
+    </div>
+
+    <!--底部 信息-->
+    <div class="row">
+        <div class="footer" style="background-color: #1e407a;height: 40px">
+            <div class="copyright">
+                <div class="text-center" style="padding-top: 10px">
+                   <p style="color: white">
+                       Copyright © xsteacher | 渝ICP备023145号 | 技术支持：希师技术中心
+                       #193d75
+                   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="jquery-3.3.1/jquery-3.3.1.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
